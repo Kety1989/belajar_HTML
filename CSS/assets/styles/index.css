@@ -1,0 +1,67 @@
+/*
+
+margin -> mengatur jarak antara element (Luar)
+padding -> mengatur jarak dalam elemet (dalam)
+
+*/
+
+@font-face {
+    font-family: "combo";
+    src: url(../Fonts/Combo-Regular.ttf);
+}
+
+h1 {
+    font-family:"combo";
+}
+
+
+
+
+.paragraf-pertama{
+    color: slategray;
+    background-color: skyblue;
+}
+#paragraf-kedua{
+    color: salmon;
+}
+
+
+.wrapper-card{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: lavender;
+    padding: 10px;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .p {
+    justify-content: center;
+}
+
+
+.Kotak {
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    animation: bounce 1s infinite;
+}
+@keyframes bounce {
+    0% {
+    margin-top: -20px;
+    }
+    50% {
+    margin-top: 10px;
+    border-radius: 50%;
+    }
+    100% {
+    margin-top: -20px;
+    }
+}
