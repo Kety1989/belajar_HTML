@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 1000px;
+        }
+        .kotak{
+            /* width: 150px;*/
+            width: 150px;
+            height: 150px;
+            background-color: pink;
+            margin: 10px 10px;
+
+        }
+        .kotak:nth-child(2){
+            background-color: blue; 
+
+        }
+        .kotak:nth-child(3){
+            background-color: rgb(162, 128, 194);
+        }
+        section {
+            display: grid;
+            grid-template-columns: 33px 33px 33px;
+        }
+        @media screen  and (max-width: 300px){
+            section {
+                flex-direction: column;
+            }
+            .kotak {
+                width: 100%;
+                background-color: brown !important;
+            }
+        }
+        @media screen and (max-width: 800px) {
+            .kotak {
+                background-color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+    </section>
+    
+</body>
+</html>
